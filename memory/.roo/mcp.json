@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "fastmcp_git": {
+      "command": "uv",
+      "args": [
+        "run",
+        "main.py"
+      ],
+      "alwaysAllow": [
+        "add_memories",
+        "search_memories",
+        "get_memories"
+      ]
+    },
+    "tree_sitter": {
+      "command": "uvx",
+      "args": [
+        "--directory",
+        ".",
+        "mcp-server-tree-sitter"
+      ]
+    },
+    "time": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-time",
+        "--local-timezone=America/New_York"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "."
+      ]
+    }
+  }
+}

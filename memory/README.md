@@ -1,0 +1,1 @@
+An in-memory memory bank built on fastMCP as a demo.
