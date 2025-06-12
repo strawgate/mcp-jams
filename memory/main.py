@@ -88,7 +88,7 @@ class MemoryBank(MCPMixin):
         logger.info(f"Deleted memory with id: {id}")
 
 
-async def main():
+async def async_main():
     fastmcp = FastMCP()
 
     logger.info("Creating memory bank")
@@ -97,8 +97,10 @@ async def main():
     memory_bank.register_all(mcp_server=fastmcp)
 
     logger.info("Starting FastMCP server")
-    await fastmcp.run_async(transport="sse")
+    await fastmcp.run_async(transport="stdio")
 
+def run_mcp():
+    asyncio.run(async_main())
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    run_mcp()

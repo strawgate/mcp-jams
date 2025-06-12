@@ -1,9 +1,13 @@
 [project]
-name = "mcp-call"
+name = "mcp-memory"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastmcp>=2.8.0",
+    "pydantic>=2.11.5",
 ]
+
+[project.scripts]
+mcp-memory = "main:run_mcp"

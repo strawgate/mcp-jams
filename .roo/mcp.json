@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "memory_server": {
+      "command": "uvx",
+      "args": [
+        "--refresh",
+        "--from",
+        "./memory",
+        "mcp-memory"
+      ]
+    }
+  }
+}

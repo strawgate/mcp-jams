@@ -4,7 +4,7 @@
       "command": "uv",
       "args": [
         "run",
-        "main.py"
+        "memory/main.py"
       ],
       "alwaysAllow": [
         "add_memories",
